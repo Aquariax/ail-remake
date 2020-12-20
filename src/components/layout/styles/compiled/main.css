@@ -149,6 +149,82 @@ h3 {
   background-size: 100vw;
 }
 
+.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem 0;
+}
+
+.top_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 45%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+.top_item p {
+  color: #471b4f;
+  font-size: 1.3rem;
+}
+
+.top_item img {
+  padding: 0 1rem;
+  width: 5rem;
+}
+
+.bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bottom_item {
+  width: 31%;
+  margin: 0.2rem;
+  padding: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bottom_item img {
+  width: 80%;
+}
+
+.bottom_item_text {
+  color: #193947;
+  font-size: 1.2rem;
+}
+
+.bottom_item_text h4 {
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+}
+
 .footer {
   background-color: #193947;
   display: -webkit-box;
@@ -205,6 +281,10 @@ h3 {
   font-size: 1.1rem;
 }
 
+.footer_sec.contact a i {
+  padding-right: 0.5rem;
+}
+
 .footer_sec.info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -224,6 +304,10 @@ h3 {
   color: white;
   text-decoration: none;
   font-size: 1.1rem;
+}
+
+.footer_sec.info a i {
+  padding-right: 0.5rem;
 }
 
 .footer_extension {

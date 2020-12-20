@@ -38,7 +38,7 @@ const Footer = () => {
 			</div>
 			<div className='footer_extension'>
 				<div>
-					<p>Copyright © Genius Plaza, All rights reserved</p>
+					<p>Copyright &copy; Genius Plaza, All rights reserved</p>
 				</div>
 				<div className='footer_extension_row'>
 					<a href='https://www.geniusplaza.com/privacy'>Privacy Policy</a>

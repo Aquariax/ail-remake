@@ -1,0 +1,25 @@
+.bottom {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 2rem;
+	justify-content: center;
+	&_item {
+		width: 31%;
+		margin: 0.2rem;
+		padding: 0.5rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		img {
+			width: 80%;
+		}
+		&_text {
+			color: $tertiary-color;
+			font-size: 1.2rem;
+			h4 {
+				font-size: 1.3rem;
+				margin: 0.5rem 0;
+			}
+		}
+	}
+}

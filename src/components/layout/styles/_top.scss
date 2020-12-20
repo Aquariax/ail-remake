@@ -1,0 +1,21 @@
+.top {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: center;
+	padding: 1rem 0;
+	&_item {
+		display: flex;
+		width: 45%;
+		align-items: center;
+		padding: 1rem;
+		p {
+			color: $primary-color;
+			font-size: 1.3rem;
+		}
+		img {
+			padding: 0 1rem;
+			width: 5rem;
+		}
+	}
+}
