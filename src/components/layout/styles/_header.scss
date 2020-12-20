@@ -1,0 +1,11 @@
+.header {
+	display: flex;
+	justify-content: center;
+	background: linear-gradient(
+			to right,
+			rgba($secondary-color, 0.7),
+			rgba($secondary-color, 0.4)
+		),
+		url('/src/components/images/pexels-fauxels-3184418.jpg') center center;
+	background-size: 100vw;
+}

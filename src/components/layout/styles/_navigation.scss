@@ -1,0 +1,64 @@
+.navigation {
+	background-color: $primary-color;
+	display: flex;
+	justify-content: space-between;
+	height: 10vh;
+	align-items: center;
+	.logo {
+		.logo-main {
+			width: 120px;
+		}
+	}
+	.nav {
+		width: 80%;
+
+		display: flex;
+		justify-content: space-between;
+		&_menu {
+			display: flex;
+			justify-content: space-between;
+			&_item {
+				.lang {
+					color: white;
+					font-size: 1.2rem;
+				}
+				a {
+					text-decoration: none;
+					font-size: 1.4rem;
+				}
+				&.button {
+					background-color: $secondary-color;
+					padding: 0.7rem 2rem;
+					border-radius: 10px;
+					box-shadow: 3px 3px rgb(214, 139, 0);
+					color: white;
+					font-size: 1.3rem;
+				}
+				&.sign-up {
+					background-color: $secondary-color;
+					padding: 0.5rem 1rem;
+					border-radius: 10px;
+					box-shadow: 3px 3px rgb(214, 139, 0);
+					border: 2px solid white;
+					a {
+						color: white;
+					}
+				}
+				&.login {
+					background-color: white;
+					padding: 0.5rem 1.1rem;
+					border: 2px solid $secondary-color;
+					border-radius: 10px;
+					box-shadow: 3px 3px rgb(214, 139, 0);
+					a {
+						color: $secondary-color;
+					}
+				}
+			}
+			&.second {
+				width: 17%;
+				padding-right: 2rem;
+			}
+		}
+	}
+}

@@ -1,0 +1,349 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h3 {
+  font-size: 1.7rem;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(241, 175, 42, 0.7)), to(rgba(241, 175, 42, 0.4))), url("/src/components/images/pexels-fauxels-3184418.jpg") center center;
+  background: linear-gradient(to right, rgba(241, 175, 42, 0.7), rgba(241, 175, 42, 0.4)), url("/src/components/images/pexels-fauxels-3184418.jpg") center center;
+  background-size: 100vw;
+}
+
+.footer {
+  background-color: #193947;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  color: white;
+}
+
+.footer_sec {
+  width: 30%;
+  padding: 2rem;
+}
+
+.footer_sec.about {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.9rem;
+  padding-left: 2rem;
+}
+
+.footer_sec.about .logo2 {
+  margin-top: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.footer_sec.about p {
+  width: 60%;
+  font-size: 1.1rem;
+}
+
+.footer_sec.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer_sec.contact h3 {
+  margin-bottom: 1.4rem;
+}
+
+.footer_sec.contact a {
+  margin: 0.5rem;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.footer_sec.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer_sec.info h3 {
+  margin-bottom: 1.4rem;
+}
+
+.footer_sec.info a {
+  margin: 0.5rem;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.footer_extension {
+  background-color: #0e2f3d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 98.6%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.7rem;
+  color: white;
+}
+
+.footer_extension_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 20%;
+}
+
+.footer_extension_row p {
+  margin: 0 1rem;
+}
+
+.footer_extension_row a {
+  color: white;
+  text-decoration: none;
+}
+
+.navigation {
+  background-color: #471b4f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 10vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation .logo .logo-main {
+  width: 120px;
+}
+
+.navigation .nav {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navigation .nav_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navigation .nav_menu_item .lang {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.navigation .nav_menu_item a {
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+.navigation .nav_menu_item.button {
+  background-color: #f1af2a;
+  padding: 0.7rem 2rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 3px #d68b00;
+          box-shadow: 3px 3px #d68b00;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.navigation .nav_menu_item.sign-up {
+  background-color: #f1af2a;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 3px #d68b00;
+          box-shadow: 3px 3px #d68b00;
+  border: 2px solid white;
+}
+
+.navigation .nav_menu_item.sign-up a {
+  color: white;
+}
+
+.navigation .nav_menu_item.login {
+  background-color: white;
+  padding: 0.5rem 1.1rem;
+  border: 2px solid #f1af2a;
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 3px #d68b00;
+          box-shadow: 3px 3px #d68b00;
+}
+
+.navigation .nav_menu_item.login a {
+  color: #f1af2a;
+}
+
+.navigation .nav_menu.second {
+  width: 17%;
+  padding-right: 2rem;
+}
+/*# sourceMappingURL=main.css.map */
