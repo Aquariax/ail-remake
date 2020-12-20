@@ -1,9 +1,9 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import logo from '../images/edp-logo.svg';
 
 const Navbar = () => {
 	return (
-		<Fragment>
+		<div className='navigation'>
 			<div className='logo'>
 				<img src={logo} alt='edp-logo' />
 			</div>
@@ -12,9 +12,8 @@ const Navbar = () => {
 					<li className='nav_menu_item'>
 						<a href='#!'>Language</a>
 					</li>
-					<li className='nav_menu_item'>
-						<a href='#!'>Class Access Code</a>
-					</li>
+				</ul>
+				<ul className='nav_menu second'>
 					<li className='nav_menu_item'>
 						<a href='#!'>Sign Up</a>
 					</li>
@@ -23,7 +22,7 @@ const Navbar = () => {
 					</li>
 				</ul>
 			</div>
-		</Fragment>
+		</div>
 	);
 };
 
