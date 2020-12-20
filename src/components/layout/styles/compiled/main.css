@@ -260,7 +260,8 @@ h3 {
 }
 
 .navigation {
-  background-color: #471b4f;
+  background: -webkit-gradient(linear, left top, right top, from(#330b3a), color-stop(#471b4f), to(#1d0b20));
+  background: linear-gradient(to right, #330b3a, #471b4f, #1d0b20);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -307,7 +308,7 @@ h3 {
 }
 
 .navigation .nav_menu_item.button {
-  background-color: #f1af2a;
+  background: radial-gradient(#f1af2a, #db8401);
   padding: 0.7rem 2rem;
   border-radius: 10px;
   -webkit-box-shadow: 3px 3px #d68b00;
@@ -317,12 +318,11 @@ h3 {
 }
 
 .navigation .nav_menu_item.sign-up {
-  background-color: #f1af2a;
+  background: radial-gradient(#f1af2a, #db8401);
   padding: 0.5rem 1rem;
   border-radius: 10px;
   -webkit-box-shadow: 3px 3px #d68b00;
           box-shadow: 3px 3px #d68b00;
-  border: 2px solid white;
 }
 
 .navigation .nav_menu_item.sign-up a {
@@ -330,7 +330,7 @@ h3 {
 }
 
 .navigation .nav_menu_item.login {
-  background-color: white;
+  background: radial-gradient(white, #faf5f5);
   padding: 0.5rem 1.1rem;
   border: 2px solid #f1af2a;
   border-radius: 10px;

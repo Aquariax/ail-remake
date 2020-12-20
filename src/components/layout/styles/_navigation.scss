@@ -1,5 +1,10 @@
 .navigation {
-	background-color: $primary-color;
+	background: linear-gradient(
+		to right,
+		rgba(#330b3a, 1),
+		rgba($primary-color, 1),
+		rgba(#1d0b20, 1)
+	);
 	display: flex;
 	justify-content: space-between;
 	height: 10vh;
@@ -27,7 +32,7 @@
 					font-size: 1.4rem;
 				}
 				&.button {
-					background-color: $secondary-color;
+					background: radial-gradient(rgba(#f1af2a, 1), rgba(#db8401, 1));
 					padding: 0.7rem 2rem;
 					border-radius: 10px;
 					box-shadow: 3px 3px rgb(214, 139, 0);
@@ -35,17 +40,19 @@
 					font-size: 1.3rem;
 				}
 				&.sign-up {
-					background-color: $secondary-color;
+					background: radial-gradient(rgba(#f1af2a, 1), rgba(#db8401, 1));
 					padding: 0.5rem 1rem;
 					border-radius: 10px;
 					box-shadow: 3px 3px rgb(214, 139, 0);
-					border: 2px solid white;
 					a {
 						color: white;
 					}
 				}
 				&.login {
-					background-color: white;
+					background: radial-gradient(
+						rgba(white, 1),
+						rgba(rgb(250, 245, 245), 1)
+					);
 					padding: 0.5rem 1.1rem;
 					border: 2px solid $secondary-color;
 					border-radius: 10px;
