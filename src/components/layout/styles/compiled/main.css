@@ -89,6 +89,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -251,6 +252,22 @@ h3 {
 
 .full-card .heading {
   margin-bottom: 2rem;
+  color: #471b4f;
+  height: 3.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.full-card .heading h5 {
+  color: #f1af2a;
 }
 
 .full-card .card-area {
@@ -264,11 +281,12 @@ h3 {
 
 .full-card .card-area .card {
   width: 16%;
-  border: 2px solid #471b4f;
   border-radius: 25px;
-  padding: 2rem;
+  padding: 2rem 1rem;
   margin: 1rem;
-  height: 30rem;
+  height: 24rem;
+  -webkit-box-shadow: 5px 5px 8px 8px #eeeeee;
+          box-shadow: 5px 5px 8px 8px #eeeeee;
 }
 
 .full-card .card-area .card .card-logo img {
@@ -281,8 +299,27 @@ h3 {
 }
 
 .full-card .card-area .card .middle {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   height: 8.5rem;
+}
+
+.full-card .card-area .card .bottom {
+  margin: 1rem;
+}
+
+.full-card .card-area .card .bottom .subtext {
+  color: #f1af2a;
+}
+
+.full-card .card-area .card .bottom .tag {
+  margin: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.full-card .card-area .card .bottom a {
+  text-decoration: none;
+  color: #00b0b9;
 }
 
 .code {
@@ -300,6 +337,7 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 2rem 0;
 }
 
 .code_input {
@@ -440,8 +478,8 @@ h3 {
 }
 
 .navigation {
-  background: -webkit-gradient(linear, left top, right top, from(#330b3a), color-stop(#471b4f), to(#1d0b20));
-  background: linear-gradient(to right, #330b3a, #471b4f, #1d0b20);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(51, 11, 58, 0.7)), color-stop(rgba(71, 27, 79, 0.7)), to(rgba(29, 11, 32, 0.8)));
+  background: linear-gradient(to right, rgba(51, 11, 58, 0.7), rgba(71, 27, 79, 0.7), rgba(29, 11, 32, 0.8));
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -491,18 +529,14 @@ h3 {
   background: radial-gradient(#f1af2a, #db8401);
   padding: 0.7rem 2rem;
   border-radius: 10px;
-  -webkit-box-shadow: 3px 3px #d68b00;
-          box-shadow: 3px 3px #d68b00;
   color: white;
   font-size: 1.3rem;
 }
 
 .navigation .nav_menu_item.sign-up {
-  background: radial-gradient(#f1af2a, #db8401);
   padding: 0.5rem 1rem;
   border-radius: 10px;
-  -webkit-box-shadow: 3px 3px #d68b00;
-          box-shadow: 3px 3px #d68b00;
+  color: white;
 }
 
 .navigation .nav_menu_item.sign-up a {
@@ -510,12 +544,7 @@ h3 {
 }
 
 .navigation .nav_menu_item.login {
-  background: radial-gradient(white, #faf5f5);
   padding: 0.5rem 1.1rem;
-  border: 2px solid #b6b6b6;
-  border-radius: 10px;
-  -webkit-box-shadow: 3px 3px #afafaf;
-          box-shadow: 3px 3px #afafaf;
 }
 
 .navigation .nav_menu_item.login a {

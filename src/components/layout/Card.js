@@ -24,6 +24,11 @@ const Card = () => {
 							and data privacy of their family in a single place. First to serve
 							indigenous and native communities in 100+ languages.
 						</p>
+						<div className='bottom'>
+							<p className='subtext'>Best For:</p>
+							<p className='tag'>Families</p>
+							<a href='#!'>Learn More</a>
+						</div>
 					</div>
 				</div>
 				<div className='card'>
@@ -36,6 +41,11 @@ const Card = () => {
 							The first inclusive & HIPAA Compliant Learning Information System
 							(SIS) with a mobile-first parent portal in 100+ languages.
 						</p>
+						<div className='bottom'>
+							<p className='subtext'>Best For:</p>
+							<p className='tag'>Administration</p>
+							<a href='#!'>Learn More</a>
+						</div>
 					</div>
 				</div>
 				<div className='card'>
@@ -48,6 +58,11 @@ const Card = () => {
 							The first inclusive & FERPA Compliant Electronic Health Record
 							(EHR) with a patient portal in 100+ languages.
 						</p>
+						<div className='bottom'>
+							<p className='subtext'>Best For:</p>
+							<p className='tag'>Medical</p>
+							<a href='#!'>Learn More</a>
+						</div>
 					</div>
 				</div>
 				<div className='card'>
@@ -61,6 +76,11 @@ const Card = () => {
 							to learn and teach together. Easy to use with a single dashboard
 							to manage everything without distractions. All in 100+ languages.
 						</p>
+						<div className='bottom'>
+							<p className='subtext'>Best For:</p>
+							<p className='tag'>Education</p>
+							<a href='#!'>Learn More</a>
+						</div>
 					</div>
 				</div>
 			</div>
