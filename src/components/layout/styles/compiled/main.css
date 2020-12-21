@@ -216,13 +216,36 @@ h3 {
 }
 
 .bottom_item_text {
-  color: #193947;
+  color: #471b4f;
   font-size: 1.2rem;
 }
 
 .bottom_item_text h4 {
   font-size: 1.3rem;
   margin: 0.5rem 0;
+}
+
+.code {
+  height: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.code_input {
+  width: 20rem;
+  height: 3rem;
+  border-radius: 10px;
+  border: 3px solid #471b4f;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .footer {
@@ -416,10 +439,10 @@ h3 {
 .navigation .nav_menu_item.login {
   background: radial-gradient(white, #faf5f5);
   padding: 0.5rem 1.1rem;
-  border: 2px solid #f1af2a;
+  border: 2px solid #b6b6b6;
   border-radius: 10px;
-  -webkit-box-shadow: 3px 3px #d68b00;
-          box-shadow: 3px 3px #d68b00;
+  -webkit-box-shadow: 3px 3px #afafaf;
+          box-shadow: 3px 3px #afafaf;
 }
 
 .navigation .nav_menu_item.login a {
