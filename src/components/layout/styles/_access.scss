@@ -1,6 +1,7 @@
 .code {
 	height: 15vh;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	&_input {
@@ -11,5 +12,13 @@
 		text-align: center;
 		font-size: 1.5rem;
 		font-weight: bold;
+		margin: 0.4rem;
+	}
+	a {
+		font-size: 1.2rem;
+		color: $secondary-color;
+		text-decoration: none;
+		padding: 5px;
+		border-radius: 10px;
 	}
 }

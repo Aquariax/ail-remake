@@ -149,6 +149,10 @@ h3 {
   background-size: 100vw;
 }
 
+.fulltop {
+  margin-top: 2rem;
+}
+
 .fulltop .top-header {
   color: #471b4f;
   font-size: 2.5rem;
@@ -189,7 +193,15 @@ h3 {
   width: 5rem;
 }
 
-.bottom {
+.full-bottom h3 {
+  text-align: center;
+  color: #471b4f;
+  font-size: 2rem;
+  text-decoration: underline;
+  margin: 1rem;
+}
+
+.full-bottom .bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -201,7 +213,7 @@ h3 {
           justify-content: center;
 }
 
-.bottom_item {
+.full-bottom .bottom_item {
   width: 31%;
   margin: 0.2rem;
   padding: 0.5rem;
@@ -213,21 +225,21 @@ h3 {
           align-items: center;
 }
 
-.bottom_item img {
+.full-bottom .bottom_item img {
   width: 80%;
 }
 
-.bottom_item_text {
+.full-bottom .bottom_item_text {
   color: #471b4f;
   font-size: 1.2rem;
 }
 
-.bottom_item_text h4 {
+.full-bottom .bottom_item_text h4 {
   font-size: 1.3rem;
   margin: 0.5rem 0;
 }
 
-.special img {
+.full-bottom .special img {
   width: 68%;
 }
 
@@ -268,11 +280,20 @@ h3 {
   font-size: 1.7rem;
 }
 
+.full-card .card-area .card .middle {
+  font-size: 1.2rem;
+  height: 8.5rem;
+}
+
 .code {
   height: 15vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -289,6 +310,15 @@ h3 {
   text-align: center;
   font-size: 1.5rem;
   font-weight: bold;
+  margin: 0.4rem;
+}
+
+.code a {
+  font-size: 1.2rem;
+  color: #f1af2a;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 .footer {

@@ -9,6 +9,7 @@ const Access = () => {
 				name='code'
 				className='code_input'
 			/>
+			<a href='#!'>Get Access Code</a>
 		</div>
 	);
 };
