@@ -5,6 +5,7 @@ import Footer from './components/layout/Footer';
 import Top from './components/layout/Top';
 import Bottom from './components/layout/Bottom';
 import Access from './components/layout/Access';
+import Card from './components/layout/Card';
 import './components/layout/styles/compiled/main.css';
 function App() {
 	return (
@@ -13,7 +14,7 @@ function App() {
 			<Header />
 			<Access />
 			<Top />
-			<h4>Hello World</h4>
+			<Card />
 			<Bottom />
 			<Footer />
 		</div>

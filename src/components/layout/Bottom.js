@@ -11,8 +11,8 @@ const Bottom = () => {
 	return (
 		<div className='bottom'>
 			<div className='bottom_item'>
-				<div className='image'>
-					<img src={data} alt='' />
+				<div className='image special'>
+					<img src={data} alt='edp-data' />
 				</div>
 				<div className='bottom_item_text'>
 					<h4>1. DATA OWNERSHIP</h4>
@@ -21,7 +21,7 @@ const Bottom = () => {
 			</div>
 			<div className='bottom_item'>
 				<div className='image'>
-					<img src={privacy} alt='' />
+					<img src={privacy} alt='edp-privacy' />
 				</div>
 				<div className='bottom_item_text'>
 					<h4>2. DATA PRIVACY OFFICER</h4>
@@ -32,8 +32,8 @@ const Bottom = () => {
 				</div>
 			</div>
 			<div className='bottom_item'>
-				<div className='image'>
-					<img src={opt} alt='' />
+				<div className='image special'>
+					<img src={opt} alt='edp-optin' />
 				</div>
 				<div className='bottom_item_text'>
 					<h4>3. “OPT-IN” AND “OPT-OUT”</h4>
@@ -42,7 +42,7 @@ const Bottom = () => {
 			</div>
 			<div className='bottom_item'>
 				<div className='image'>
-					<img src={disclose} alt='' />
+					<img src={disclose} alt='edp-disclose' />
 				</div>
 				<div className='bottom_item_text'>
 					<h4>4. DISCLOSURES</h4>
@@ -53,7 +53,7 @@ const Bottom = () => {
 			</div>
 			<div className='bottom_item'>
 				<div className='image'>
-					<img src={protection} alt='' />
+					<img src={protection} alt='edp-protection' />
 				</div>
 				<div className='bottom_item_text'>
 					<h4>5. DATA PROTECTION</h4>
@@ -64,7 +64,7 @@ const Bottom = () => {
 			</div>
 			<div className='bottom_item'>
 				<div className='image'>
-					<img src={erasure} alt='' />
+					<img src={erasure} alt='edp-erasure' />
 				</div>
 				<div className='bottom_item_text'>
 					<h4>6. ERASURE & AMENDMENTSTO PERSONAL INFORMATION</h4>
@@ -72,8 +72,8 @@ const Bottom = () => {
 				</div>
 			</div>
 			<div className='bottom_item'>
-				<div className='image'>
-					<img src={production} alt='' />
+				<div className='image special'>
+					<img src={production} alt='edp-production' />
 				</div>
 				<div className='bottom_item_text'>
 					<h4>7. PRODUCTION OF DATA</h4>
