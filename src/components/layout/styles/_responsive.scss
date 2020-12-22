@@ -96,10 +96,9 @@
 		.nav {
 			flex-direction: column;
 			width: 100%;
-
+			position: absolute;
 			&_menu {
 				flex-direction: column;
-
 				&_item {
 					&.button {
 						background: none;
