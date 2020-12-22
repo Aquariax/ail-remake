@@ -3,6 +3,7 @@ import doctor from '../images/genius-doctor-logo.svg';
 import village from '../images/genius-village-logo.svg';
 import lis from '../images/genius-lis.svg';
 import world from '../images/genius-world.svg';
+import leader from '../images/genius-leader.svg';
 
 const Card = () => {
 	return (
@@ -26,7 +27,7 @@ const Card = () => {
 						</p>
 						<div className='bottom'>
 							<p className='subtext'>Best For:</p>
-							<p className='tag'>Families</p>
+							<p className='tag'>Care Leaders</p>
 							<a href='#!'>Learn More</a>
 						</div>
 					</div>
@@ -43,7 +44,7 @@ const Card = () => {
 						</p>
 						<div className='bottom'>
 							<p className='subtext'>Best For:</p>
-							<p className='tag'>Administration</p>
+							<p className='tag'>Leaders in Education</p>
 							<a href='#!'>Learn More</a>
 						</div>
 					</div>
@@ -60,7 +61,7 @@ const Card = () => {
 						</p>
 						<div className='bottom'>
 							<p className='subtext'>Best For:</p>
-							<p className='tag'>Medical</p>
+							<p className='tag'>Medical Leaders</p>
 							<a href='#!'>Learn More</a>
 						</div>
 					</div>
@@ -78,7 +79,24 @@ const Card = () => {
 						</p>
 						<div className='bottom'>
 							<p className='subtext'>Best For:</p>
-							<p className='tag'>Education</p>
+							<p className='tag'>Education Leaders</p>
+							<a href='#!'>Learn More</a>
+						</div>
+					</div>
+				</div>
+				<div className='card'>
+					<div className='card-logo'>
+						<img src={leader} alt='genius leader logo' />
+					</div>
+					<div className='card_text'>
+						<p className='title'>MANAGE YOUR PLAN(S)</p>
+						<p className='middle'>
+							A Master Data Management (MDM) Tool to help leaders make
+							data-driven decisions and break the silos with interoperability.
+						</p>
+						<div className='bottom'>
+							<p className='subtext'>Best For:</p>
+							<p className='tag'>All Leaders</p>
 							<a href='#!'>Learn More</a>
 						</div>
 					</div>

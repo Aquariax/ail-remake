@@ -70,7 +70,7 @@ const Bottom = () => {
 						<img src={erasure} alt='edp-erasure' />
 					</div>
 					<div className='bottom_item_text'>
-						<h4>6. ERASURE & AMENDMENTSTO PERSONAL INFORMATION</h4>
+						<h4>6. ERASURE & AMENDMENTS TO PERSONAL INFORMATION</h4>
 						<p>Looking at the needs of both consumers and businesses</p>
 					</div>
 				</div>

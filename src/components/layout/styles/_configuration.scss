@@ -5,3 +5,21 @@ $tertiary-color: #193947;
 h3 {
 	font-size: 1.7rem;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: bold;
+}
+@mixin media-sm {
+	@media screen and (max-width: 768px) {
+		@content;
+	}
+}
+@mixin media-md {
+	@media screen and (max-width: 1024px) {
+		@content;
+	}
+}

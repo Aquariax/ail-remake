@@ -1,5 +1,5 @@
 import React from 'react';
-import header from '../images/edpchange.png';
+import header from '../images/edp-cloud.svg';
 const Header = () => {
 	return (
 		<div className='header'>

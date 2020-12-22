@@ -1,0 +1,115 @@
+@include media-sm {
+	.footer {
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+		&_sec {
+			padding: 1rem;
+
+			width: 90%;
+			&.about {
+				align-items: center;
+				width: 90%;
+				padding: 0.8rem;
+				p {
+					width: 90%;
+				}
+			}
+		}
+	}
+	.footer_extension {
+		width: 100%;
+		flex-direction: column-reverse;
+		padding: 0;
+		align-items: center;
+		justify-content: space-evenly;
+		height: 8vh;
+		p {
+			font-size: 0.9rem;
+		}
+		&_row {
+			width: 100%;
+			justify-content: center;
+		}
+	}
+	.full-card {
+		width: 100%;
+		.card-area {
+			flex-direction: column;
+			width: 100%;
+			.card {
+				width: 80%;
+			}
+		}
+	}
+	.code {
+		input {
+			width: 80%;
+		}
+	}
+	.full-bottom {
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+
+		.bottom {
+			justify-content: center;
+			flex-direction: column;
+			padding: 0;
+			width: 95%;
+			&_item {
+				width: 90%;
+				text-align: center;
+				img {
+					display: none;
+				}
+			}
+		}
+		.special {
+			display: none;
+		}
+	}
+	.fulltop {
+		.top {
+			flex-direction: column;
+
+			&_item {
+				width: 90%;
+
+				flex-direction: column;
+				text-align: center;
+			}
+		}
+	}
+	.header {
+		width: 100%;
+
+		img {
+			width: 80%;
+			padding: 0;
+		}
+	}
+	.navigation {
+		width: 100%;
+
+		.nav {
+			flex-direction: column;
+			width: 100%;
+
+			&_menu {
+				flex-direction: column;
+
+				&_item {
+					&.button {
+						background: none;
+						padding: 0;
+						border-radius: 10px;
+						color: white;
+						font-size: 1.3rem;
+					}
+				}
+			}
+		}
+	}
+}
