@@ -7,6 +7,7 @@ import Bottom from './components/layout/Bottom';
 import Access from './components/layout/Access';
 import Card from './components/layout/Card';
 import './components/layout/styles/compiled/main.css';
+import { CardData } from './components/layout/CardData';
 function App() {
 	return (
 		<div className='App'>
@@ -15,7 +16,7 @@ function App() {
 			<Top />
 			<Access />
 			<Bottom />
-			<Card />
+			<Card cards={CardData} />
 			<Footer />
 		</div>
 	);

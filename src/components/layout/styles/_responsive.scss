@@ -35,8 +35,7 @@
 	.full-card {
 		width: 100%;
 		.card-area {
-			flex-direction: column;
-			width: 100%;
+			align-items: center;
 			.card {
 				width: 80%;
 			}

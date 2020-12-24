@@ -1,18 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import doctor from '../images/genius-doctor-logo.svg';
 import village from '../images/genius-village-logo.svg';
 import lis from '../images/genius-lis.svg';
 import world from '../images/genius-world.svg';
 import leader from '../images/genius-leader.svg';
+import { CardData } from './CardData';
 
-const Card = () => {
+const Card = ({ cards }) => {
+	const [current, setCurrent] = useState(0);
+	const length = cards.length;
+
 	return (
 		<div className='full-card'>
-			<div className='heading'>
+			{/* <div className='heading'>
 				<h3>Our Other Tools</h3>
 				<h5>All tools available in 100+ languages</h5>
 			</div>
-
 			<div className='card-area'>
 				<div className='card viewing'>
 					<div className='card-logo'>
@@ -101,6 +104,26 @@ const Card = () => {
 						</div>
 					</div>
 				</div>
+			</div> */}
+			<div className=''>
+				{CardData.map((card) => {
+					return (
+						<div className='card viewing'>
+							<div className='card-logo'>
+								<img src={card.image} alt='genius doctor logo' />
+							</div>
+							<div className='card_text'>
+								<p className='title'>{card.title}</p>
+								<p className='middle'>{card.text}</p>
+								<div className='bottom'>
+									<p className='subtext'>Best For:</p>
+									<p className='tag'>{card.tag}</p>
+									<a href='#!'>Learn More</a>
+								</div>
+							</div>
+						</div>
+					);
+				})}
 			</div>
 		</div>
 	);
