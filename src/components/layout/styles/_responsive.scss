@@ -33,11 +33,28 @@
 		}
 	}
 	.full-card {
-		width: 100%;
 		.card-area {
+			height: 70vh;
 			align-items: center;
+			.fa-caret-left {
+				position: absolute;
+				left: -2%;
+				transform: scale(0.5);
+			}
+			.fa-caret-right {
+				position: absolute;
+				right: -2%;
+				transform: scale(0.5);
+			}
 			.card {
-				width: 80%;
+				display: none;
+				&.viewing {
+					width: 80%;
+					height: 90%;
+					z-index: -1;
+					display: initial;
+					transform: scale(1);
+				}
 			}
 		}
 	}
@@ -83,9 +100,9 @@
 	}
 	.header {
 		width: 100%;
-
+		padding: 0.4rem 0;
 		img {
-			width: 80%;
+			width: 75%;
 			padding: 0;
 		}
 	}

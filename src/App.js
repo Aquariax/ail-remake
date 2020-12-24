@@ -5,9 +5,9 @@ import Footer from './components/layout/Footer';
 import Top from './components/layout/Top';
 import Bottom from './components/layout/Bottom';
 import Access from './components/layout/Access';
-import Card from './components/layout/Card';
+import Card from './components/layout/cards/Card';
 import './components/layout/styles/compiled/main.css';
-import { CardData } from './components/layout/CardData';
+import { CardData } from './components/layout/cards/CardData';
 function App() {
 	return (
 		<div className='App'>

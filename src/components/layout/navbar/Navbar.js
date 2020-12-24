@@ -7,7 +7,7 @@ const Navbar = () => {
 			<div className='logo'>
 				<img src={logo} alt='edp-logo' className='logo-main' />
 			</div>
-			<div className='nav'>
+			<nav className='nav'>
 				<ul className='nav_menu'>
 					<li className='nav_menu_item button'>
 						<p>
@@ -23,7 +23,7 @@ const Navbar = () => {
 						<a href='#!'>Log In</a>
 					</li>
 				</ul>
-			</div>
+			</nav>
 		</div>
 	);
 };
