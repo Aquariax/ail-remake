@@ -20,10 +20,13 @@ const Card = ({ cards }) => {
 				<i className='fas fa-caret-left' onClick={prevCard}></i>
 				{CardData.map((card, index) => {
 					return (
-						<div className={index === current ? 'card viewing' : 'card'}>
+						<div
+							className={index === current ? 'card viewing' : 'card'}
+							key={card.id}
+						>
 							<div>
 								<div className='card-logo'>
-									<img src={card.logo} alt='genius doctor logo' key={index} />
+									<img src={card.logo} alt='genius doctor logo' />
 								</div>
 								<div className='card_text'>
 									<p className='title'>{card.title}</p>

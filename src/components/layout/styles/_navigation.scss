@@ -1,61 +1,44 @@
-.navigation {
-	background: linear-gradient(
-		to right,
-		rgba(#330b3a, 0.7),
-		rgba($primary-color, 0.7),
-		rgba(#1d0b20, 0.8)
-	);
+.navbar {
+	height: 4rem;
 	display: flex;
-	justify-content: space-between;
-	height: 10vh;
 	align-items: center;
-	.logo {
-		.logo-main {
-			width: 95%;
-		}
-	}
-	.nav {
-		width: 80%;
+	.navbar-nav {
 		display: flex;
+		width: 100%;
 		justify-content: space-between;
-		&_menu {
+		align-items: center;
+		.logo {
+			padding-left: 1rem;
+		}
+		.nav-links {
 			display: flex;
+			width: 80%;
 			justify-content: space-between;
-			&_item {
-				.lang {
-					color: white;
-					font-size: 1.2rem;
-				}
-				a {
-					text-decoration: none;
-					font-size: 1.4rem;
-				}
-				&.button {
-					background: radial-gradient(rgba(#f1af2a, 1), rgba(#db8401, 1));
-					padding: 0.7rem 2rem;
-					border-radius: 10px;
-					color: white;
-					font-size: 1.3rem;
-				}
-				&.sign-up {
-					padding: 0.5rem 1rem;
-					border-radius: 10px;
-					color: white;
-					a {
-						color: white;
-					}
-				}
-				&.login {
-					padding: 0.5rem 1.1rem;
-					a {
-						color: $secondary-color;
-					}
+			align-items: center;
+			padding: 1rem;
+			a {
+				text-decoration: none;
+				color: $primary-color;
+				font-size: 1.2rem;
+				font-weight: bold;
+				i {
+					font-size: 1rem;
 				}
 			}
-			&.second {
-				width: 17%;
-				padding-right: 2rem;
+			.nav-auth {
+				width: 20%;
+				display: flex;
+				justify-content: space-evenly;
+				align-items: center;
+				.sign {
+					padding: 0.6rem 0.8rem 0.8rem 0.8rem;
+					border-radius: 15px;
+					border: 2px solid $primary-color;
+				}
 			}
+		}
+		.nav-item {
+			display: none;
 		}
 	}
 }

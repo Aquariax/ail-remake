@@ -1,5 +1,5 @@
 import './App.css';
-import Navbar from './components/layout/Navbar';
+import Navigation from './components/layout/navbar/Navigation';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import Top from './components/layout/Top';
@@ -11,7 +11,7 @@ import { CardData } from './components/layout/cards/CardData';
 function App() {
 	return (
 		<div className='App'>
-			<Navbar />
+			<Navigation />
 			<Header />
 			<Top />
 			<Access />

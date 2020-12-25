@@ -1,29 +1,9 @@
 import React from 'react';
-import logo from '../images/edp-logo-2.svg';
 
-const Navbar = () => {
+const Navbar = (props) => {
 	return (
-		<div className='navigation'>
-			<div className='logo'>
-				<img src={logo} alt='edp-logo' className='logo-main' />
-			</div>
-			<nav className='nav'>
-				<ul className='nav_menu'>
-					<li className='nav_menu_item button'>
-						<p>
-							Language <i className='fas fa-angle-down lang'></i>
-						</p>
-					</li>
-				</ul>
-				<ul className='nav_menu second'>
-					<li className='nav_menu_item sign-up'>
-						<a href='#!'>Sign Up</a>
-					</li>
-					<li className='nav_menu_item login'>
-						<a href='#!'>Log In</a>
-					</li>
-				</ul>
-			</nav>
+		<div className='navbar'>
+			<ul className='navbar-nav'>{props.children}</ul>
 		</div>
 	);
 };
