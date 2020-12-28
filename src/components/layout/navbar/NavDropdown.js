@@ -1,7 +1,6 @@
 import React from 'react';
 import NavDropdownItem from './NavDropdownitem';
 const NavDropdown = (props) => {
-	console.log(`${props.texts}`);
 	return (
 		<div className={props.texts}>
 			<div className='nav-menu'>
@@ -13,17 +12,21 @@ const NavDropdown = (props) => {
 				</NavDropdownItem>
 				<NavDropdownItem
 					leftIcon={<i className='fas fa-user-plus'></i>}
-					rightIcon={<i className='fas fa-chevron-right'></i>}
+					linkName='https://edp.geniusplaza.com/signup'
 				>
 					Sign Up
 				</NavDropdownItem>
 				<NavDropdownItem
 					leftIcon={<i className='fas fa-sign-in-alt'></i>}
 					rightIcon={<i className='fas fa-chevron-right'></i>}
+					linkName='https://edp.geniusplaza.com/login'
 				>
 					Login
 				</NavDropdownItem>
-				<NavDropdownItem leftIcon={<i className='fas fa-toolbox'></i>}>
+				<NavDropdownItem
+					leftIcon={<i className='fas fa-toolbox'></i>}
+					linkName='#tools'
+				>
 					Our Tools
 				</NavDropdownItem>
 			</div>

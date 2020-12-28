@@ -81,11 +81,22 @@
 				}
 			}
 			&.viewing {
-				transform: scale(1.3);
+				animation: sizer 0.7s;
+				animation-fill-mode: forwards;
 				background-color: white;
 				z-index: 10;
+				width: 20%;
 				cursor: grab;
 			}
 		}
+	}
+}
+
+@keyframes sizer {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.3);
 	}
 }

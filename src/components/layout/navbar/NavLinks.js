@@ -10,8 +10,15 @@ const NavLinks = () => {
 				link='#'
 			/>
 			<div className='nav-auth'>
-				<NavLinkItem linkItem='Sign Up' link='#' class='sign' />
-				<NavLinkItem linkItem='Login' link='#!' />
+				<NavLinkItem
+					linkItem='Sign Up'
+					class='sign'
+					link='https://edp.geniusplaza.com/signup'
+				/>
+				<NavLinkItem
+					linkItem='Login'
+					link='https://edp.geniusplaza.com/login'
+				/>
 			</div>
 		</div>
 	);
