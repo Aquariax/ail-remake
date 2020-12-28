@@ -22,8 +22,8 @@ const Footer = () => {
 						<i className='fas fa-globe'></i> geniusplaza.com
 					</a>
 					<a href='https://www.google.com/maps/place/Genius+Plaza/@25.7834228,-80.1923258,17z/data=!3m1!4b1!4m5!3m4!1s0x88d9b73ac8e9fd17:0xc3b78d993ce2982c!8m2!3d25.7834228!4d-80.1901371'>
-						<i className='fas fa-map-marker-alt'></i> 990 Biscayne Blvd Suite
-						401 Miami, FL 33132
+						<i className='fas fa-map-marker-alt'></i>{' '}
+						<p>990 Biscayne Blvd Suite 401 Miami, FL 33132</p>
 					</a>
 				</div>
 				<div className='footer_sec info'>

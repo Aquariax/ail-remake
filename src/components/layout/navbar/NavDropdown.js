@@ -1,9 +1,9 @@
 import React from 'react';
 import NavDropdownItem from './NavDropdownitem';
-
-const NavDropdown = () => {
+const NavDropdown = (props) => {
+	console.log(`${props.texts}`);
 	return (
-		<div className='dropdown'>
+		<div className={props.texts}>
 			<div className='nav-menu'>
 				<NavDropdownItem
 					leftIcon={<i className='fas fa-globe-europe'></i>}

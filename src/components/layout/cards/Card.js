@@ -11,7 +11,7 @@ const Card = ({ cards }) => {
 		setCurrent(current === 0 ? length - 1 : current - 1);
 	};
 	return (
-		<div className='full-card'>
+		<div className='full-card' id='tools'>
 			<div className='heading'>
 				<h3>Our Other Tools</h3>
 				<h5>All tools available in 100+ languages</h5>

@@ -1,13 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const NavItem = (props) => {
-	const [open, setOpen] = useState(false);
 	return (
 		<li className='nav-item'>
-			<a href='#' className='nav-button' onClick={() => setOpen(!open)}>
+			<a href='#' className='nav-button' onClick={props.set}>
 				{props.icon}
 			</a>
-			{open && props.children}
+			{props.opened && props.children}
 		</li>
 	);
 };

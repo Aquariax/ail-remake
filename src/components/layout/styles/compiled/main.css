@@ -488,6 +488,9 @@ h6 {
   color: white;
   text-decoration: none;
   font-size: 1.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .footer_sec.contact a i {
@@ -777,6 +780,10 @@ h6 {
     padding: 0;
   }
   .navbar .navbar-nav {
+    top: 0;
+    position: absolute;
+    -webkit-transition: top 0.3s;
+    transition: top 0.3s;
     z-index: 12;
     background-color: white;
   }
@@ -785,7 +792,7 @@ h6 {
   }
   .navbar .navbar-nav .nav-item {
     display: initial;
-    padding: 1rem;
+    padding: 1rem 2rem 1rem 1rem;
     font-size: 30px;
   }
   .navbar .navbar-nav .dropdown {
@@ -795,10 +802,10 @@ h6 {
     position: absolute;
     top: 3.9rem;
     right: 0rem;
-    -webkit-animation-name: slide;
-            animation-name: slide;
-    -webkit-animation-duration: 0.5s;
-            animation-duration: 0.5s;
+    -webkit-animation: slide2 750ms;
+            animation: slide2 750ms;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
   }
   .navbar .navbar-nav .dropdown .nav-menu {
     height: 20rem;
@@ -823,6 +830,86 @@ h6 {
   }
   .navbar .navbar-nav .dropdown .nav-menu a .nav-right {
     padding-left: 0.5rem;
+  }
+  .navbar .navbar-nav .dropdownClose {
+    height: 100vh;
+    background: radial-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.7), white);
+    max-width: 16rem;
+    position: absolute;
+    top: 3.9rem;
+    right: 0rem;
+    -webkit-animation: slide 500ms;
+            animation: slide 500ms;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .navbar .navbar-nav .dropdownClose .nav-menu {
+    height: 20rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar .navbar-nav .dropdownClose .nav-menu a {
+    border-bottom: 2px solid #471b4f;
+    text-decoration: none;
+    color: #471b4f;
+  }
+  .navbar .navbar-nav .dropdownClose .nav-menu a i {
+    font-size: 1.4rem;
+  }
+  .navbar .navbar-nav .dropdownClose .nav-menu a .nav-button {
+    padding-right: 0.4rem;
+  }
+  .navbar .navbar-nav .dropdownClose .nav-menu a .nav-right {
+    padding-left: 0.5rem;
+  }
+}
+
+@-webkit-keyframes slide {
+  from {
+    -webkit-transform: translateX(16rem);
+            transform: translateX(16rem);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slide {
+  from {
+    -webkit-transform: translateX(16rem);
+            transform: translateX(16rem);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slide2 {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(16rem) scaleX(0);
+            transform: translateX(16rem) scaleX(0);
+  }
+}
+
+@keyframes slide2 {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(16rem) scaleX(0);
+            transform: translateX(16rem) scaleX(0);
   }
 }
 /*# sourceMappingURL=main.css.map */

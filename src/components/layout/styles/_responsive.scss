@@ -112,6 +112,9 @@
 	}
 	.navbar {
 		.navbar-nav {
+			top: 0;
+			position: absolute;
+			transition: top 0.3s;
 			z-index: 12;
 			background-color: white;
 			.nav-links {
@@ -119,9 +122,10 @@
 			}
 			.nav-item {
 				display: initial;
-				padding: 1rem;
+				padding: 1rem 2rem 1rem 1rem;
 				font-size: 30px;
 			}
+
 			.dropdown {
 				height: 100vh;
 				background: radial-gradient(
@@ -135,8 +139,43 @@
 				position: absolute;
 				top: 3.9rem;
 				right: 0rem;
-				animation-name: slide;
-				animation-duration: 0.5s;
+				animation: slide2 750ms;
+				animation-fill-mode: forwards;
+				.nav-menu {
+					height: 20rem;
+					display: flex;
+					flex-direction: column;
+					a {
+						border-bottom: 2px solid $primary-color;
+						text-decoration: none;
+						color: $primary-color;
+						i {
+							font-size: 1.4rem;
+						}
+						.nav-button {
+							padding-right: 0.4rem;
+						}
+						.nav-right {
+							padding-left: 0.5rem;
+						}
+					}
+				}
+			}
+			.dropdownClose {
+				height: 100vh;
+				background: radial-gradient(
+					rgba(white, 0),
+					rgba(white, 0.2),
+					rgba(white, 0.5),
+					rgba(white, 0.7),
+					rgba(white, 1)
+				);
+				max-width: 16rem;
+				position: absolute;
+				top: 3.9rem;
+				right: 0rem;
+				animation: slide 500ms;
+				animation-fill-mode: forwards;
 
 				.nav-menu {
 					height: 20rem;
@@ -159,5 +198,22 @@
 				}
 			}
 		}
+	}
+}
+
+@keyframes slide {
+	from {
+		transform: translateX(16rem);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+@keyframes slide2 {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(16rem) scaleX(0);
 	}
 }
