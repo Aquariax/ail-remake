@@ -84,10 +84,7 @@
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				text-align: center;
-				img {
-					display: none;
-				}
+				text-align: left;
 			}
 		}
 		.special {
@@ -218,9 +215,6 @@
 				justify-content: center;
 				align-items: center;
 				text-align: center;
-				img {
-					display: none;
-				}
 			}
 		}
 		.special {
@@ -256,18 +250,13 @@
 	.full-bottom {
 		.bottom {
 			&_item {
-				width: 48%;
+				width: 80%;
 				padding: 0;
-				img {
-					display: none;
-				}
 			}
-		}
-		.special {
-			display: none;
 		}
 	}
 }
+
 @keyframes slide {
 	from {
 		transform: translateX(16rem);

@@ -1,11 +1,11 @@
 import React from 'react';
-import data from '../images/data-ownership.png';
-import privacy from '../images/data-privacy.png';
-import opt from '../images/opt-in.png';
-import disclose from '../images/disclosures.png';
-import protection from '../images/data-protection.png';
-import erasure from '../images/erasure.png';
-import production from '../images/production.png';
+import data from '../images/edp-data-ownership.svg';
+import privacy from '../images/edp-data-privacy.svg';
+import opt from '../images/edp-opt.svg';
+import disclose from '../images/edp-disclosures.svg';
+import protection from '../images/edp-data-protection.svg';
+import erasure from '../images/edp-amendments.svg';
+import production from '../images/edp-data-production.svg';
 
 const Bottom = () => {
 	return (
@@ -13,7 +13,7 @@ const Bottom = () => {
 			<h3 className='bottom-header'>Practices</h3>
 			<div className='bottom'>
 				<div className='bottom_item'>
-					<div className='image special'>
+					<div className='image'>
 						<img src={data} alt='edp-data' />
 					</div>
 					<div className='bottom_item_text'>
@@ -34,7 +34,7 @@ const Bottom = () => {
 					</div>
 				</div>
 				<div className='bottom_item'>
-					<div className='image special'>
+					<div className='image'>
 						<img src={opt} alt='edp-optin' />
 					</div>
 					<div className='bottom_item_text'>
@@ -75,7 +75,7 @@ const Bottom = () => {
 					</div>
 				</div>
 				<div className='bottom_item'>
-					<div className='image special'>
+					<div className='image'>
 						<img src={production} alt='edp-production' />
 					</div>
 					<div className='bottom_item_text'>
