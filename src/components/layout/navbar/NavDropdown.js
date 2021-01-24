@@ -26,6 +26,7 @@ const NavDropdown = (props) => {
 				<NavDropdownItem
 					leftIcon={<i className='fas fa-toolbox'></i>}
 					linkName='#tools'
+					sett={props.set}
 				>
 					Our Tools
 				</NavDropdownItem>

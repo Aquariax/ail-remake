@@ -19,7 +19,7 @@
 	.card-area {
 		display: flex;
 		width: 98%;
-		height: 79vh;
+		height: 80vh;
 		justify-content: center;
 		align-items: center;
 
@@ -44,11 +44,11 @@
 			cursor: pointer;
 		}
 		.card {
-			width: 19%;
+			width: 20%;
 			border-radius: 25px;
 			padding: 2rem 1rem;
 			margin: 1rem;
-			height: 24rem;
+			height: 65%;
 			box-shadow: 5px 5px 8px 8px rgb(238, 238, 238);
 			z-index: 5;
 			.card-logo {
@@ -64,9 +64,10 @@
 			.middle {
 				font-size: 1.1rem;
 				height: 8.5rem;
+				margin-bottom: 10px;
 			}
 			.bottom {
-				margin: 1rem;
+				margin: 0;
 				.subtext {
 					color: $secondary-color;
 				}
@@ -81,7 +82,8 @@
 				}
 			}
 			&.viewing {
-				animation: sizer 0.7s;
+				transition: 0.5s transform ease-in-out;
+				transform: scale(1.2);
 				animation-fill-mode: forwards;
 				background-color: white;
 				z-index: 10;
@@ -89,14 +91,5 @@
 				cursor: grab;
 			}
 		}
-	}
-}
-
-@keyframes sizer {
-	from {
-		transform: scale(1);
-	}
-	to {
-		transform: scale(1.2);
 	}
 }

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  <style>
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZVJvb3QiOiIifQ== */</style><style>/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+.App {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+  padding: 1rem;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), repeating-linear-gradient(45deg, rgba(100, 100, 100, 0.8) 0%, rgba(219, 226, 224, 0.6) 5%, transparent 2%, transparent 10%, rgba(87, 105, 101, 0.7) 10%, rgba(0, 0, 0, 0.5) 11%, transparent 11%, transparent 13%, rgba(87, 105, 101, 0.7) 12%, rgba(0, 0, 0, 0.5) 13%, transparent 14%, transparent 16%), white repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.5) 0%, rgba(168, 167, 167, 0.5) 5%, rgba(26, 23, 23, 0.5) 7%, transparent 3%, transparent 8%, transparent 9%);
+}
+
+.App_main {
+  width: 80%;
+}
+
+.App_sidebar {
+  width: 20%;
+  padding: 2rem 1rem 1rem;
+  background-color: rgba(20, 228, 255, 0.5);
+  border-radius: 45px 0 10px 10px;
+}
+
+.App_sidebar ul {
+  list-style-type: circle;
+}
+
+.header {
+  background-color: rgba(20, 228, 255, 0.5);
+  height: 4rem;
+  border-radius: 0 25px 0 0;
+  padding-left: 1rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  height: 3rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_info {
+  font-size: 1.1rem;
+  margin: 0.25rem;
+  display: flex;
+}
+
+.contact_info p {
+  padding: 0.5rem;
+}
+
+.contact_social {
+  display: flex;
+  margin: 0.25rem;
+}
+
+.contact_social p {
+  padding: 0.5rem;
+}
+
+.skills {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 22%;
+  background-color: rgba(255, 255, 255, 0.8);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skills h3 {
+  text-decoration: underline;
+}
+
+.skills li {
+  margin: 0.7rem;
+  font-size: 1.1rem;
+}
+
+.skills_key {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills_technical {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.summary {
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.summary p {
+  text-align: justify;
+}
+
+.jobs {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1rem 2rem 0 2rem;
+}
+
+.jobs_title {
+  text-align: center;
+  text-decoration: underline;
+}
+/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvY29tcG9uZW50cy9sYXlvdXQvc3R5bGVzL19yZXNldC5zY3NzIiwid2VicGFjazovL3NyYy9jb21wb25lbnRzL2xheW91dC9zdHlsZXMvY29tcGlsZWQvbWFpbi5jc3MiLCJ3ZWJwYWNrOi8vc3JjL2NvbXBvbmVudHMvbGF5b3V0L3N0eWxlcy9fY29uZmlnLnNjc3MiLCJ3ZWJwYWNrOi8vc3JjL2NvbXBvbmVudHMvbGF5b3V0L3N0eWxlcy9fYXBwLnNjc3MiLCJ3ZWJwYWNrOi8vc3JjL2NvbXBvbmVudHMvbGF5b3V0L3N0eWxlcy9faGVhZGVyLnNjc3MiLCJ3ZWJwYWNrOi8vc3JjL2NvbXBvbmVudHMvbGF5b3V0L3N0eWxlcy9fY29udGFjdC5zY3NzIiwid2VicGFjazovL3NyYy9jb21wb25lbnRzL2xheW91dC9zdHlsZXMvX3NraWxscy5zY3NzIiwid2VicGFjazovL3NyYy9jb21wb25lbnRzL2xheW91dC9zdHlsZXMvX3N1bW1hcnkuc2NzcyIsIndlYnBhY2s6Ly9zcmMvY29tcG9uZW50cy9sYXlvdXQvc3R5bGVzL19qb2JzLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0E7OztDQ0VDO0FER0Q7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7RUErRUMsU0FBUztFQUNULFVBQVU7RUFDVixTQUFTO0VBQ1QsZUFBZTtFQUNmLGFBQWE7RUFDYix3QkFBd0I7QUNEekI7O0FER0EsZ0RBQUE7QUFDQTs7Ozs7Ozs7Ozs7RUFXQyxjQUFjO0FDQWY7O0FERUE7RUFDQyxjQUFjO0FDQ2Y7O0FEQ0E7RUFDQyxnQkFBZ0I7QUNFakI7O0FEQUE7O0VBRUMsWUFBWTtBQ0diOztBRERBOzs7O0VBSUMsV0FBVztFQUNYLGFBQWE7QUNJZDs7QURGQTtFQUNDLHlCQUF5QjtFQUN6QixpQkFBaUI7QUNLbEI7O0FERkEsaURBQUE7QUVoSUE7Ozs7Ozs7RUFPQyxpQkFBaUI7QURzSWxCOztBQ3BJQTtFQUNDLGVBQWU7QUR1SWhCOztBQ3JJQTtFQUNDLGlCQUFpQjtBRHdJbEI7O0FDdElBO0VBQ0MsaUJBQWlCO0FEeUlsQjs7QUV6SkE7RUFDQyxVQUFVO0VBR1YsYUFBYTtFQUNiLGNBQVk7RUEwQ1osYUFBQTtFQVpBLDJpQkFBTztBRmlJUjs7QUFFQTtFRWhJQyxVQUFTO0FGa0lWOztBQUVBO0VFaElFLFVBQUE7RUFJQSx1QkFBQTtFRitIQSx5Q0FBeUM7RUV2SXpDLCtCQUtHO0FGb0lMOztBQUVBO0VHakxBLHVCQUFRO0FIbUxSOztBQUVBO0VHakxDLHlDQUFrQjtFQUNsQixZQUFBO0VIbUxDLHlCQUF5QjtFSXhMM0Isa0JBQVM7QUowTFQ7O0FBRUE7RUl0TEMsYUFBQTtFQUVBLHNCQUFPO0VBQ04sWUFBVztFQUNYLDBDQUFlO0VBQ2YsYUFBYTtFQUhiLHVCQUlFO0VKZ01NLG1CQUFtQjtBSTVMNUI7O0FKK0xEO0VJekxFLGlCQUFBO0VKMkxBLGVBQWU7RUk1TGQsYUFBQTtBSmdNSDs7QUFFQTtFS3JOQyxlQUFhO0FMdU5kOztBQUVBO0VLbE1DLGFBQUE7RUxzTUMsZUFBZTtBSy9OakI7O0FMa09BO0VBQ0UsZUFBZTtBS25PakI7O0FMc09BO0VLeE5FLGFBQUE7RUFFQSxhQUFhO0VMOE5MLHNCQUFzQjtFSzFOL0IsV0FBQTtFQUNDLDBDQUFhO0VBR2IsbUJBQUE7RUN2Qk0sOEJBQU07QU5zUGQ7O0FBRUE7RU16UEEsMEJBR0c7QU53UEg7O0FBRUE7RU83UEEsY0FBTTtFQUNMLGlCQUFnQjtBUCtQakI7O0FBRUE7RU83UEUsYUFBQTtFUGtRSSxlQUFlO0VBR1gsdUJBQXVCO0FBQ2pDOztBQUVBO0VBR0UsYUFBYTtFQUVULGVBQWU7RUFHWCx1QkFBdUI7QUFDakM7O0FBRUE7RUFDRSxhQUFhO0VBQ2IsMENBQTBDO0FBQzVDOztBQUVBO0VBQ0UsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsMENBQTBDO0VBQzFDLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQiwwQkFBMEI7QUFDNUI7QUFDQSxtQ0FBbUMiLCJzb3VyY2VSb290IjoiIn0= */</style><script charset="utf-8" src="./React App_files/main.ffbc24b3873790d0ebe3.hot-update.js.download"></script><script charset="utf-8" src="./React App_files/main.7d0bfd35112d6aefa3ea.hot-update.js.download"></script><script charset="utf-8" src="./React App_files/main.d3fc4aff4384ad19de64.hot-update.js.download"></script><script charset="utf-8" src="./React App_files/main.eb59b89075e6fedb1ad4.hot-update.js.download"></script><script charset="utf-8" src="./React App_files/main.660de87fef05ea38d4ce.hot-update.js.download"></script><script charset="utf-8" src="./React App_files/main.c61f624dfc0e06520b91.hot-update.js.download"></script><script charset="utf-8" src="./React App_files/main.af3e12d9ddc0a101f6a7.hot-update.js.download"></script></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div class="App"><div class="App_sidebar"><div class="sidebar"><div class="sidebar_education"><h3>Education</h3><ul><li>Lovejoy High School | 2014-2018</li><li>Lambda School (Web Developement Bootcamp)| 2018-2019</li></ul></div><div class="sidebar_summary"><h3>Bio</h3><p>My name is Robert Harris, a guy looking to make a way for himself. A family oriented individual looking to build a future for those close to him and himself. That enjoys digital arts, nature, and interacting with others. A curious person and a very quick learner hoping to improve where ever they are.</p></div><div class="hobbies"><h3>Hobbies</h3><ul><li>3D Modeling &amp; Game Design</li><li>Codewars (programming training)</li><li>Playing music</li><li>Video Games</li></ul></div></div></div><div class="App_main"><div class="header"><h1 class="name">Robert C Harris Jr.</h1><h3 class="title">Frontend Web Developer</h3></div><div><div class="contact"><div class="contact_info"><p><span>Email: </span>roberthrrsix@gmail.com</p><p><span>Phone: </span>(770) 742-6235</p></div><div class="contact_social"><p><span>Github: </span>Aquariax</p><p><span>Instagram: </span>aquari_designs</p><p><span>Linkedin URL: </span>www.linkedin.com/in/Aquari</p><p><span>Twitter: </span>@Aquari_designs</p></div></div></div><div class="skills"><h3>Key Skills</h3><ul class="skills_key"><li>Web Development and Maintenance</li><li>Frontend Development</li><li>3rd Party API Integration</li><li>REST API Developement</li><li>Requirement Gathering</li></ul><h3>Technical Skills</h3><ul class="skills_technical"><li><span>Database: </span>MONGO DB, MySql, SQLite</li><li><span>Debugging Tools: </span>Chrome Development Tools</li><li><span>Languages: </span>HTML</li><li><span>Operating Systems: </span>Windows, Linux</li><li><span>Other Skills: </span>jQuery, CSS, SASS, AJAX, cpanel</li><li><span>Package Managers: </span>NPM</li><li><span>Scripting Languages: </span>JavaScript</li><li><span>Technologies: </span>Web Designing, Web Developer</li><li><span>Version Control System: </span>Git</li><li><span>Web Technologies: </span>React JS Node.js</li></ul></div><div class="summary"><p>Dynamic and detail-oriented Web Developer with a knack for conceptualizing and delivering elegant, user-friendly solutions effectively and efficiently. Capable of establishing and maintaining good client relationships while delivering exceptional designs. Armed with a desire for learning new technologies and ability to quickly pick up on the new trends and practices in the field.</p><ul><li>2 Years experience as <span>React JS Developer</span> and<span> Software Developer</span></li><li>5 years experience developing webpages using<span> HTML/HTML5, Wordpress, SASS, CSS,</span>and <span>Flex</span></li><li>Experienced in <span>MERN</span> stack development <span>Mongo dB, Express, React, </span>and <span>Node</span>.</li><li>Workin knowledge in developing single - page applications <span>(SPAs)</span></li><li>Working knowledge of Web protocols and standards <span>(HTTP, HTML5/XHTML, CSS3, Web Forms, XML)</span></li><li>Good experience on customizing CSS frameworks like Bootstrap using CSS pre-processors such as SASS</li><li>Expertise in <span>React JS</span> framework to develop the <span>SPA</span>.</li><li>Experience in using <span>React JS components, Forms, Events, Keys, Router, plus Redux</span> </li><li>Familiar with creating Custom Reusable <span>React Components Library.</span></li><li>Experienced in working with Node.JS and NPM modules like <span>json-server, mongo DB,</span> and <span>express</span></li><li>Experience in Node environment using <span>Node.js</span>, <span>NPM</span></li><li>Involved in writing application level code to interact with <span>APIs, RESTful</span> Web Services using <span>AJAX, JSON</span></li><li>Expertise in using IDE tools such as <span>Visual Studio Code</span></li><li>Ability to work effectively while working as a <span>team member</span> as well as <span>individually</span>.</li><li>Excellent communication and <span>Inter-Personal Skills, well organized, goal oriented</span>.</li></ul></div><div class="jobs"><h2 class="jobs_title">Jobs</h2><div class="jobs_head"><h4>Globe 2 Global Inc.</h4><h3>Web Developer</h3><h4>July 2014 - May 2019</h4></div><ul><li>Modified files to allow for better storage capabilities</li><li>Developed and designed multiple websites using wordpress</li><li>Modified preexisting plugins and themes on client command</li><li>Migrated websites using file transfer protocol (ftp) clients such as file-zilla</li><li>Implemented e-commerce capability using the woocommerce api</li><li>Managed SSL certificate location for sites</li><li>Handled compatability issues and maintainence for wordpress updates (themes and plugins)</li><li>Gathered requirements such as themes, plugins, and other necessary items to develop websites based on clients preference</li></ul><div class="jobs_head"><h4>GPS Hospitality</h4><h3>Burger King Lead Team Member</h3><h4>November 2017 – May 2019</h4></div><ul><li>Took initiative to find extra tasks when scheduled duties were completed</li><li>Maintained high standards of customer service during high-volume, fast-paced operations</li><li>Followed procedures for safe food preparation, assembly, and presentation</li><li>Handled currency and credit transactions quickly and accurately</li><li>Mastered point-of-service (POS) computer system for automated order taking</li><li>Communicated clearly and positively with coworkers and management</li><li>Assisted management with inventory control and stock ordering</li><li>Resolved complaints promptly and professionally</li><li>Cross-trained and coordinated scheduling with team members to ensure seamless service</li></ul><div class="jobs_head"><h4>Sitel Group</h4><h3>PSCU Fraud Detection</h3><h4>February 2020 – November 2020</h4></div><ul><li>Develop skills in a variety of areas including data, internal tools management, and quality control</li><li>Strong communication skills, self-motivated and results-oriented</li><li>Good communication skills in spoken and written English</li><li>Monitored and reviewed activity on member accounts</li><li>Utilize Transaction Imaging and other tools to review transaction activity to determine if suspicious activity is taking place</li><li>Enjoy working in fast-paced and rapidly changing operational environment</li><li>Prepare and conduct initial and on-going training in order to provide accurate, superior-quality cardholder service</li><li>Performs significantly complex research utilizing three to five sources</li><li>Assist clients &amp; cardholders with resolving their fraud inquiries</li><li>Identify changing fraud trends and recommend possible Falcon strategy changes to reduce fraud loss</li><li>Respond promptly to client and customer inquiries</li><li>Handle high volume phone calls</li><li>Anticipate client/customer needs and consistently provide superior quality of service</li><li>Identify and use appropriate resources</li></ul></div></div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script src="./React App_files/bundle.js.download"></script><script src="./React App_files/0.chunk.js.download"></script><script src="./React App_files/main.chunk.js.download"></script>
+
+</body></html>

@@ -14,6 +14,7 @@ const Navigation = () => {
 			? setState({ open: true, text: 'dropdownClose' })
 			: setState({ open: false, text: 'dropdown' });
 	};
+
 	return (
 		<div>
 			<NavBar>
